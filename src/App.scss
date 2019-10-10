@@ -1,0 +1,40 @@
+#app {
+  font-family: "Avenir Next", Helvetica, sans-serif;
+}
+
+#navbar {
+  display: block;
+  width: 100%;
+  ul {
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      margin: 10px;
+    }
+  }
+}
+
+.window {
+  display: flex;
+  flex-flow: row;
+}
+
+#sidebar {
+  display: block;
+  width: 20vw;
+}
+
+#main {
+  display: block;
+  width: 80vw;
+}
+.m {
+  .m-outline {
+    .m-outline__title {
+      font-size: 14px;
+    }
+  }
+}

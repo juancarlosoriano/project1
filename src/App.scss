@@ -1,14 +1,25 @@
+body {
+  background-color: #333;
+}
 #app {
   font-family: "Avenir Next", Helvetica, sans-serif;
 }
 
 #navbar {
   display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  z-index: 2;
   ul {
     display: flex;
-    flex-flow: row-reverse;
-    margin: 0;
+    flex-flow: row;
+    justify-content: flex-end;
+    margin: 0 10px;
     padding: 0;
     li {
       display: block;
@@ -20,21 +31,101 @@
 .window {
   display: flex;
   flex-flow: row;
+  margin-left: 280px;
+  background-color: white;
 }
 
 #sidebar {
   display: block;
-  width: 20vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 280px;
+  height: 100vh;
+  padding-top: 62px;
+  background-color: #eee;
 }
 
 #main {
   display: block;
-  width: 80vw;
+  padding-top: 62px;
 }
+
+.sb {
+  border-right: 0.5px solid #ddd;
+  .sb-header {
+    padding: 10px 10px 5px 10px;
+    .sb-title {
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+  .sb-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .sb-list-item {
+      display: block;
+      padding: 5px 0px 5px 10px;
+      margin-right: -1px;
+      height: 60px;
+      cursor: pointer;
+
+      .sb-list-item__title,
+      .sb-list-item__author {
+        display: block;
+        margin: auto 0;
+      }
+      .sb-list-item__title {
+        font-size: 1.2em;
+        line-height: 35px;
+      }
+      .sb-list-item__author {
+        font-size: 0.8em;
+        font-weight: 600;
+        line-height: 15px;
+      }
+      &.sb-list-item--selected {
+        background-color: #bbb;
+      }
+    }
+  }
+}
+
 .m {
+  padding: 20px 30px;
+  max-width: 700px;
+  .m-header {
+    margin-top: 10px;
+    h1 {
+      font-weight: 300;
+      font-size: 2.5em;
+      margin: 0;
+      cursor: pointer;
+    }
+    .m-header__subtitle {
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+  }
   .m-outline {
     .m-outline__title {
-      font-size: 14px;
+      font-size: 1em;
+      font-weight: 700;
+    }
+    .m-outline__list {
+      list-style: none;
+      padding-left: 20px;
+    }
+    .m-outline__list-item {
+      text-decoration: underline;
+    }
+  }
+  .m-section {
+    header h2 {
+      font-size: 1em;
+      font-weight: 700;
     }
   }
 }

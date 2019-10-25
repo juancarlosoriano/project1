@@ -62,6 +62,70 @@ const MainSection = () => (
   </article>
 );
 
+const Forms = () => (
+  <div id="forms">
+    <br />
+    <form>
+      <label>Enter your name:</label>
+      <br />
+      <input type="text" required={true} />
+      <br />
+      <br />
+
+      <label>Enter your password:</label>
+      <br />
+      <input type="password" required={true} />
+      <br />
+      <br />
+
+      <input type="checkbox" />
+      <label>Do you want to sign up to the newsletter?</label>
+
+      <br />
+      <hr />
+
+      <label>Choose your adventure?</label>
+      <br />
+      <input type="radio" name="adventure" value="warrior" />
+      <label>Warrior</label>
+      <br />
+      <input type="radio" name="adventure" value="mage" />
+      <label>Mage</label>
+      <br />
+      <input type="radio" name="adventure" value="thief" />
+      <label>Thief</label>
+      <br />
+      <input type="radio" name="adventure" value="archer" />
+      <label>Archer</label>
+      <br />
+      <br />
+
+      <label>Choose a color:</label>
+      <input type="color" />
+      <br />
+      <br />
+
+      <label>Enter your email:</label>
+      <input type="email" required={true} />
+      <br />
+      <br />
+
+      <label>Pick a number:</label>
+      <input type="number" />
+      <br />
+      <br />
+
+      <label>Search using a keyword:</label>
+      <input type="search" />
+
+      <br />
+      <br />
+
+      <input type="submit" />
+    </form>
+  </div>
+);
+
 const Main = () => (
   <main id="main" className="m">
     <MainHeader />
@@ -74,6 +138,7 @@ const Main = () => (
     <br />
 
     <MainSection />
+    {/* <Forms /> */}
   </main>
 );
 export default Main;

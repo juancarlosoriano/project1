@@ -9,7 +9,7 @@ const Sidebar = () => {
     },
     {
       title: "Checklist Manifesto",
-      author: "Dr.",
+      author: "Dr. Atul Gawande",
       selected: false
     },
     {

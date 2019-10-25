@@ -43,6 +43,7 @@ body {
   z-index: 1;
   width: 280px;
   height: 100vh;
+  min-height: 100vh;
   padding-top: 62px;
   background-color: #eee;
 }
@@ -50,6 +51,7 @@ body {
 #main {
   display: block;
   padding-top: 62px;
+  min-height: 100vh;
 }
 
 .sb {
